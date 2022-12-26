@@ -1,4 +1,4 @@
-let myLibrary = ["The Hobbit", "Uncrowned", "Awesome Sauce"];
+let myLibrary = [];
 const mainContainer = document.querySelector(".container");
 const addBookBtn = document.querySelector(".newBook");
 const form = document.querySelector('.form');
@@ -19,6 +19,7 @@ document.addEventListener('keypress', function (e) {
 });
 
 submitBtn.addEventListener('click', () => {
+    this.preventDefault
     const title = document.querySelector('#title');
     myLibrary.push(title.textContent)
     addBookToLibrary(myLibrary)
