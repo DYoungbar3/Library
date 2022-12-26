@@ -20,7 +20,7 @@ document.addEventListener('keypress', function (e) {
 
 submitBtn.addEventListener('click', () => {
     const title = document.querySelector('#title');
-    myLibrary.push(title)
+    myLibrary.push(title.textContent)
     addBookToLibrary(myLibrary)
     
 })
