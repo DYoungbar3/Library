@@ -1,14 +1,9 @@
 let myLibrary = [];
-const mainContainer = document.querySelector(".container");
+const mainContainer = document.querySelector(".add-books");
 const addBookBtn = document.querySelector(".newBook");
 const form = document.querySelector('.form');
 const submitBtn = document.querySelector('.submit');
 
-form.style.display = 'none';
-
-addBookBtn.addEventListener('click', () => {
-    form.style.display = 'grid';
-})
 
 document.addEventListener('keypress', function (e) {
     if (e.keyCode === 13 || e.which === 13) {
