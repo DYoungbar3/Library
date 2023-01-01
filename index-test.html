@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
@@ -27,6 +27,7 @@
                     <label for="author">Author: </label>
                     <input type="text" id="author">
                 </div>
+            </div>
             <div class="row">
                 <div class="one-half column">
                     <label for="pages">Number of pages: </label>
@@ -35,19 +36,13 @@
                 <div class="one-half column">
                     <label for="read">Have you read this book?</label>
                     <select name="read" id="read">
-                        <option value="yes">Already read</option>
-                        <option value="no">Have not read</option>
+                        <option value="Yes" selected>Already read</option>
+                        <option value="No">Have not read</option>
                     </select>
-
-                    <!-- <div class="dropdown">
-                        <button class="dropbtn">Already read</button>
-                        <div class="dropdown-content">
-                            <h5 class="have">Yes</h3>
-                            <h5 class="have-not">No</h3>
-                        </div>
-                    </div> -->
                 </div>
             </div>
+            <div class="row">
+                <button class="submit">Confirm new book</button>
             </div>
         </form>
 
