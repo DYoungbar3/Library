@@ -420,14 +420,6 @@ there.
 
 /* Adding to the framework for dropdown menu button */
 
-.dropdown-content {
-  display: none;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content h5:hover {
+select>option:hover {
   background-color: #0FA0CE;
 }
