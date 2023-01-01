@@ -16,10 +16,17 @@ document.addEventListener('keypress', function (e) {
 
 submitBtn.addEventListener('click', () => {
     this.preventDefault  // makes button only do the following
-    const title = document.querySelector('#title');
-    myLibrary.push(title.textContent)
-    addBookToLibrary(myLibrary)
-    
+    const newTitle = document.querySelector('#title').value
+    const newAuthor = document.querySelector('#author').value
+    const newPageCount = document.querySelector('#pages').value
+    const beenRead = document.querySelector('#read')
+    const yesOrNo = beenRead.value
+    const latestBook = new Book(newTitle, newAuthor, newPageCount, yesOrNo)
+    myLibrary.push(latestBook)
+    for (i=0; i<myLibrary.length; i++) {
+        sessionStorage.setItem(i, JSON.stringify(myLibrary[i]))
+    }
+    console.log(myLibrary)
 })
 
 function Book (title, author, pages, read) {
