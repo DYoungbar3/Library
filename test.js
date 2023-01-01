@@ -4,7 +4,8 @@ const addBookBtn = document.querySelector(".newBook");
 const form = document.querySelector('.form');
 const submitBtn = document.querySelector('.submit');
 
-
+// No longer lets ENTER key submit form
+// Done to remove possibility of accidents
 document.addEventListener('keypress', function (e) {
     if (e.keyCode === 13 || e.which === 13) {
         e.preventDefault();
@@ -14,7 +15,7 @@ document.addEventListener('keypress', function (e) {
 });
 
 submitBtn.addEventListener('click', () => {
-    this.preventDefault
+    this.preventDefault  // makes button only do the following
     const title = document.querySelector('#title');
     myLibrary.push(title.textContent)
     addBookToLibrary(myLibrary)
