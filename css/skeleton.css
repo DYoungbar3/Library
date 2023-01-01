@@ -423,3 +423,9 @@ there.
 select>option:hover {
   background-color: #0FA0CE;
 }
+
+/* Add margin to top button */
+
+.newBook {
+  margin-bottom: 3%;
+}
